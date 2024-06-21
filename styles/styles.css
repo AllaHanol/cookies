@@ -10,6 +10,7 @@
     font-family: 'Steppe-ExtraBold';
     src: url('../fonts/Steppe-ExtraBold.ttf');
 }
+/* ======COMMON STYLES======= */
 body{
     background-color: #5243F4;
     font-family: 'Steppe-Book', sans-serif;
@@ -54,6 +55,38 @@ body{
     position: relative;
     overflow: hidden;
 }
+.currency{
+position: fixed;
+right: 50px;
+bottom: 50px;
+border: 1px solid #fff;
+border-radius: 50px;
+text-align: center;
+padding: 5px 10px;
+height: 25px;
+min-height: 25px;
+cursor: pointer;
+line-height: 28px;
+z-index: 1;
+user-select: none;
+transform: scale(1);
+animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100%{
+        transform: scale(0.9);
+        box-shadow: 0 0 00 rgba(255, 255, 255, 0);
+    }
+}
+/* =======HEADER============== */
 .header{
 padding: 40px 0;
 }
@@ -82,6 +115,7 @@ color: #fff;
 .menu-item a:hover{
     border-bottom: 2px solid #fff;
 }
+/* ======HERO========= */
 .main-content{
     padding-top: 161px;
     padding-bottom: 200px;
@@ -109,6 +143,7 @@ top: 0;
 right: 0;
 z-index: -1;
 }
+/* ====CATALOG=============== */
 .products{
     padding: 100px 0;
     position: relative;
@@ -161,6 +196,7 @@ text-align: center;
 .products-item-weight{
     font-size: 12px;
 }
+/* ====ÜBER BECKEREI===== */
 .love{
     padding: 64px 0 150px 0;
 }
@@ -189,6 +225,7 @@ text-align: center;
     font-size: 18px;
     line-height: 130%;
 }
+/* ======ORDER=========== */
 .order{
 padding-bottom: 102px;
 position: relative;
@@ -254,6 +291,7 @@ position: relative;
     right: calc(100% - 810px);
     z-index: -1;
 }
+/* =====FOOTER======= */
 .footer{
     padding: 126px 0 50px 0;
     text-align: center;
@@ -263,6 +301,7 @@ position: relative;
     font-size: 18px;
     line-height: 130%;
 }
+/* =====LINE======== */
 .line1{
 position: absolute;
 z-index: -1;
