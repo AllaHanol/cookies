@@ -1,6 +1,6 @@
 document.getElementById('main-action-button').onclick = function(){
     document.getElementById('products').scrollIntoView({behavior: 'smooth'});
- }
+ } //order
 // =======link to ITEM======
  const links = document.querySelectorAll('.menu-item > a')
  for (let i = 0; i < links.length; i++) {
